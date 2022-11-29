@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>accordeon</title>
+</head>
+<body>
+  <div id="root">
+  </div>
+  <template id="accordeon-item-template">
+    <li class="accordeon-item">
+      <button class="accordeon-item__button" type="button">Показать</button>
+      <div class="accordeon-item__content">
+      </div>
+    </li>
+  </template>
+  <template id="card-template">
+    <div class="card">
+      <div class="card__image-wrapper">
+        <img src="" alt="image" loading="lazy">
+      </div>
+      <p class="card__text"></p>
+    </div>
+  </template>
+</body>
+<script src="index.js"></script>
+</html>

@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  margin: 1% auto;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.card {
+  width: 100%;
+  height: 50%;
+  padding: 10px;
+  border: 1px solid grey;
+}
+
+.card__image-wrapper {
+  width: 100%;
+  height: 80%;
+}
+
+.card__image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__text {
+  padding: 10px;
+  font-size: 20px;
+}
+
+/* accordeon styles */
+
+.accordeon {
+  min-width: 100%;
+  list-style-type: none;
+}
+
+.accordeon-item {
+
+}
+
+.accordeon-item__button {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordeon-item__button:after {
+  content: '\02795';
+  /* Символ юникода для "плюса" знак (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordeon-item.visible .accordeon-item__button:after {
+  content: "\2796";
+  /* Символ юникода для "минуса" знак (-) */
+}
+
+.accordeon-item__button:hover {
+  background-color: #ccc;
+}
+
+.accordeon-item__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.2s ease-out;
+}
+
+.accordeon-item.visible .accordeon-item__content {
+  margin: 1rem 0;
+}
