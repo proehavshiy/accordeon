@@ -6,7 +6,7 @@ Has a option "autoCollapse" that controlls the number of simultaneously opened i
 
 <br/>
 
-[demo](https://infinite-scrolling-peach.vercel.app/)
+[demo](https://accordeon.vercel.app/)
 
 <br/>
 
